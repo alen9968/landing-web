@@ -10,10 +10,10 @@ export const Nav00DataSource = {
   Menu: {
     className: 'header0-menu',
     children: [
-      { name: 'item0', a: { children: '导航一', href: '' } },
-      { name: 'item1', a: { children: '导航二', href: '' } },
-      { name: 'item2', a: { children: '导航三', href: '' } },
-      { name: 'item3', a: { children: '导航四', href: '' } },
+      { name: 'item0', a: { children: '首页', href: '' } },
+      { name: 'item1', a: { children: '产品服务', href: '' } },
+      { name: 'item2', a: { children: '联系我们', href: '' } },
+      { name: 'item3', a: { children: '人才招聘', href: '' } },
     ],
   },
   mobileMenu: { className: 'header0-mobile-menu' },
@@ -29,8 +29,7 @@ export const Banner00DataSource = {
     className: 'banner0-content',
     children: (
       <span>
-        <p>dsdf</p>
-        <p>aaaaa</p>
+        <p>最前沿的前端网页技术服务提供商</p>
       </span>
     ),
   },
@@ -364,7 +363,7 @@ export const Footer00DataSource = {
       <span>
         ©2018
         {' '}
-        <a href="https://motion.ant.design">Ant Motion</a>
+        <a href="https://motion.ant.design">极客网络</a>
         {' '}
         All Rights Reserved
       </span>
