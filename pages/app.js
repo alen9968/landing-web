@@ -3,22 +3,14 @@ import { Provider } from 'react-redux'
 import App from 'next/app'
 import createStore from '../redux/createStore'
 import withRedux from 'next-redux-wrapper'
+import Head2 from '../components/Layout'
 import UserContext from '../components/UserContext'
 import localStorage from 'localStorage'
 import HeadMeta from '../components/HeadMeta'
+import HeadTitle from '../components/HeadTitle'
+import Nav from '../components/Nav'
 import '../styles/main.scss'
 import 'antd/dist/antd.css'
-
-import { enquireScreen } from 'enquire-js';
-import Nav0 from '../components/Home/Nav0';
-import Footer0 from '../components/Home/Footer0';
-import {
-  Nav00DataSource,
-  Footer00DataSource,
-} from '../components/Home/data.source.js';
-
-//import '../styles/less/antMotionStyle.less'
-
 
 class MyApp extends App {
   state = {
@@ -27,28 +19,41 @@ class MyApp extends App {
   }
 
   static async getInitialProps({ Component, ctx }) {
+    // if(typeof 'windows' === 'undefine' ){
+    //   global.navigator = {}
+    //   global.navigator.languages = {}
+    //   global.location = {}
+    // }
+    // // ctx 报错
     const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {}
     return { pageProps }
   }
+
+  LoginState = (username) => {
+    this.setState({
+      loginState: true,
+      user: username
+    })
+  }
+
+  LogoutState = () => {
+    this.setState({
+      loginState: false
+    })
+  }
+
 
   render() {
     const { Component, pageProps, store } = this.props
 
     return (
-      <UserContext.Provider  value={{ user: this.state.user, loginState: this.state.loginState }} >
+      <UserContext.Provider  value={{ user: this.state.user, loginState: this.state.loginState, LoginState: this.LoginState, LogoutState: this.LogoutState }} >
         <Provider store={store}>
           <HeadMeta />
-          {/* <Nav0 */}
-          {/*   id="Nav0_0" */}
-          {/*   key="Nav0_0" */}
-          {/*   dataSource={Nav00DataSource} */}
-          {/* /> */}
+          {/* <Nav /> */}
+          {/* <HeadTitle /> */}
+          <Head2 title="Alen's Blog" />
           <Component {...pageProps} />
-          {/* <Footer0 */}
-          {/*   id="Footer0_0" */}
-          {/*   key="Footer0_0" */}
-          {/*   dataSource={Footer00DataSource} */}
-          {/* /> */}
         </Provider>
       </UserContext.Provider>
     )
