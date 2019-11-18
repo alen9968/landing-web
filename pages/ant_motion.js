@@ -11,7 +11,7 @@ import Footer0 from '../components/AntMotion/Footer0';
 
 import {
   Nav00DataSource,
-  Banner00DataSource,
+  Banner01DataSource,
   Content00DataSource,
   Content70DataSource,
   Content130DataSource,
@@ -29,9 +29,9 @@ const Ant_motion = () => {
       dataSource={Nav00DataSource}
     />,
     <Banner0
-      id="Banner0_0"
-      key="Banner0_0"
-      dataSource={Banner00DataSource}
+      id="Banner0_1"
+      key="Banner0_1"
+      dataSource={Banner01DataSource}
     />,
     <Content0
       id="Content0_0"
