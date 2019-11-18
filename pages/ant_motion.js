@@ -5,8 +5,8 @@ import Nav0 from '../components/AntMotion/Nav0';
 import Banner0 from '../components/AntMotion/Banner0';
 import Content0 from '../components/AntMotion/Content0';
 import Content7 from '../components/AntMotion/Content7';
-import Content13 from '../components/AntMotion/Content13';
-import Content12 from '../components/AntMotion/Content12';
+import Content3 from '../components/AntMotion/Content3';
+import Content5 from '../components/AntMotion/Content5';
 import Footer0 from '../components/AntMotion/Footer0';
 
 import {
@@ -14,8 +14,8 @@ import {
   Banner01DataSource,
   Content00DataSource,
   Content70DataSource,
-  Content130DataSource,
-  Content120DataSource,
+  Content30DataSource,
+  Content50DataSource,
   Footer00DataSource,
 } from '../components/AntMotion/data.source.js';
 
@@ -38,20 +38,15 @@ const Ant_motion = () => {
       key="Content0_0"
       dataSource={Content00DataSource}
     />,
-    <Content7
-      id="Content7_0"
-      key="Content7_0"
-      dataSource={Content70DataSource}
+    <Content5
+      id="Content5_0"
+      key="Content5_0"
+      dataSource={Content50DataSource}
     />,
-    <Content13
-      id="Content13_0"
-      key="Content13_0"
-      dataSource={Content130DataSource}
-    />,
-    <Content12
-      id="Content12_0"
-      key="Content12_0"
-      dataSource={Content120DataSource}
+    <Content3
+      id="Content3_0"
+      key="Content3_0"
+      dataSource={Content30DataSource}
     />,
     <Footer0
       id="Footer0_0"
