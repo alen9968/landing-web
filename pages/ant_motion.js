@@ -4,22 +4,20 @@ import { enquireScreen } from 'enquire-js';
 import Nav0 from '../components/AntMotion/Nav0';
 import Banner0 from '../components/AntMotion/Banner0';
 import Content0 from '../components/AntMotion/Content0';
-import Content7 from '../components/AntMotion/Content7';
 import Content3 from '../components/AntMotion/Content3';
 import Content5 from '../components/AntMotion/Content5';
-import Footer0 from '../components/AntMotion/Footer0';
+import Footer1 from '../components/AntMotion/Footer1';
 
 import {
   Nav00DataSource,
   Banner01DataSource,
   Content00DataSource,
-  Content70DataSource,
   Content30DataSource,
   Content50DataSource,
-  Footer00DataSource,
+  Footer10DataSource,
 } from '../components/AntMotion/data.source.js';
 
-import '../styles/less/style.less';
+import '../components/AntMotion/less/style.less';
 
 const Ant_motion = () => {
   const children = [
@@ -48,10 +46,10 @@ const Ant_motion = () => {
       key="Content3_0"
       dataSource={Content30DataSource}
     />,
-    <Footer0
-      id="Footer0_0"
-      key="Footer0_0"
-      dataSource={Footer00DataSource}
+    <Footer1
+      id="Footer1_0"
+      key="Footer1_0"
+      dataSource={Footer10DataSource}
     />
   ];
   return (

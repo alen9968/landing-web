@@ -14,7 +14,7 @@ import {
 } from '../components/Home/data.source.js';
 
 
-const C0 = () => {
+const Test = () => {
   const children = [
    <Content0
       id="Content0_0"
@@ -43,4 +43,4 @@ const C0 = () => {
     </div>
   );
 }
-export default C0
+export default Test
