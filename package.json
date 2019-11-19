@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 80"
+    "start": "next start -p 8080"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +29,7 @@
     "message": "^0.0.1",
     "next": "^9.0.0",
     "next-redux-wrapper": "^4.0.0",
+    "node": "^13.1.0",
     "node-sass": "^4.12.0",
     "qrcode.react": "^1.0.0",
     "query-string": "^6.8.3",
@@ -48,7 +49,8 @@
     "react-scripts": "2.1.5",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
-    "wangeditor": "^3.1.1"
+    "wangeditor": "^3.1.1",
+    "yarn": "^1.19.1"
   },
   "eslintConfig": {
     "extends": "react-app"
