@@ -27,7 +27,7 @@
     "localforage": "^1.7.3",
     "lodash": "^4.17.15",
     "message": "^0.0.1",
-    "next": "^9.0.0",
+    "next": "^9.3.2",
     "next-redux-wrapper": "^4.0.0",
     "node": "^13.1.0",
     "node-sass": "^4.12.0",
